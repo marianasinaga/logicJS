@@ -95,27 +95,40 @@
 // console.log(tamp);
 
 
-var example = 'contoh';
+// var example = 'contoh';
 
-var fungsiA = function(){
-    console.log(example + 'di fungsi a');
-    var fungsiB = function(){
-        console.log(example + 'di fungsi b');
-    };
-    fungsiB();
-};
-fungsiA();
+// var fungsiA = function(){
+//     console.log(example + 'di fungsi a');
+//     var fungsiB = function(){
+//         console.log(example + 'di fungsi b');
+//     };
+//     fungsiB();
+// };
+// fungsiA();
 
 
 
-var fungsiA = function() {
-    console.log(this); // global Window object
-  }
+// var fungsiA = function() {
+//     console.log(this); // global Window object
+//   }
   
-  var sampleObject = {};
-  sampleObject.fungsiB = function() {
-    console.log(this); // Object of sampleObject
-  }
+//   var sampleObject = {};
+//   sampleObject.fungsiB = function() {
+//     console.log(this); // Object of sampleObject
+//   }
   
-  fungsiA();
-  sampleObject.fungsiB();
+//   fungsiA();
+//   sampleObject.fungsiB();
+
+var lastName, fullName, firstName;
+
+function makeName(firstName, lastName){
+  return firstName,lastName
+}
+
+firstName='mariana';
+lastName='sinaga'
+
+fullName= firstName + " " +lastName;
+
+console.log(fullName);
